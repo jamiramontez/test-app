@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @stack_item.id %>
+</p>
+
+<p>
+  <b>Item name:</b>
+  <%= @stack_item.item_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_stack_item_path(@stack_item) %> |
+<%= link_to 'Back', stack_items_path %>

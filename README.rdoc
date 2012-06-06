@@ -1,0 +1,7 @@
+= PaaS Evaluation App (Ruby on Rails)
+
+== To get application running
+
+    1) rake db:migrate
+    2) rails server
+    3) Go to localhost:3000

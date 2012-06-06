@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    </head>
+    <body>
+    <h1>Here's the latest stack:</h1>
+
+    <table>
+      <tr>
+        <th></th>
+      </tr>
+
+      <% @stack_items.each do |stack_item| %>
+          <tr>
+            <td>"<%= stack_item.item_name %>"</td>
+          </tr>
+      <% end %>
+    </table>
+    </body>
+</html>

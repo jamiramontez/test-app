@@ -1,0 +1,5 @@
+<%= form_tag("create_email", :method => "post") do %>
+    <%= label_tag(:email_address, "Email Address:") %>
+    <%= text_field_tag(:email_address) %>
+    <%= submit_tag("Submit") %>
+<% end %>

@@ -1,0 +1,23 @@
+<h1>Viewing the stack</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @stack_items.each do |stack_item| %>
+      <tr>
+        <td>"<%= stack_item.item_name %>"</td>
+        <td><%= link_to 'Pop', stack_item, confirm: 'Are you sure?', method: :delete if stack_item == @top_stack_item %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'Push an item on to the stack', new_stack_item_path %>
+<br/>
+<%= link_to 'Email the current stack to someone!', new_email_path %>
+<br/>
+<p id="notice"><%= notice %></p>
